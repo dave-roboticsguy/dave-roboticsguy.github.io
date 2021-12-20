@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- index.html by David Garcia, 2021 -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- my local stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- web stylesheet for contact icons in footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Header for navigation bar-->
+  <section id="header">
+    <div class="header container">
+      <div class="navigation-bar">
+        <div class="setup">
+          <a href="#me">
+            <!-- span used to change color from CSS -->
+            <h1><span>D</span>ave's
+              <span>R</span>obotic
+              <span>Z</span>one
+            </h1>
+          </a>
+        </div>
+        <div class="navigation-list">
+          <div class="robotics">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#me" data-after="Home">Home</a></li>
+            <li><a href="#systems" data-after="systems">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction to my landing page  -->
+  <section id="me">
+    <div class="me container">
+      <div>
+        <!-- span used to change color from CSS -->
+        <h1>Hi, I'm Dave.<span></span></h1>
+        <h1>Im a Senior Engineer. <span></span></h1>
+        <h1>I fix, design, build, & simulate <span></span></h1>
+        <h1>Industrial Robotic Systems<span></span></h1>
+        <a href="#systems" class="btn" type="button">My Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Systems Area -->
+  <section id="systems">
+    <div class="systems container">
+      <div class="systems-header">
+        <!-- span used to change color from CSS -->
+        <h1 class="section-title">My <span>Projects</span></h1>
+      </div>
+      <div class="all-systems">
+        <div class="system-item">
+          <div class="system-info">
+            <h1>YuMi Vision with Dice</h1>
+            <p>This is a project I built for our product center. It uses an ABB YuMi Cobot with cognex vision and a
+              FlexLoader.
+              The user selects a number on the HMI and then the FlexLoader presents the dice to the camera.
+              The vision algorithim in the camera sends all of the recognized matches with coordinates in an array to
+              the Cobot. The Cobot will then pick up all of dice that matches the selected number.
+            </p>
+          </div>
+          <div class="project-img">
+            <!-- uploaded video to Vimeo, then used embedded code -->
+            <iframe
+              src="https://player.vimeo.com/video/658452642?h=13dd3a2d27&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              title="YuMi_Dice.MOV"></iframe>
+          </div>
+        </div>
+        <div class="system-item">
+          <div class="system-info">
+            <h1>Lawn Mowers</h1>
+            <p>This is a full system build I spearheaded for Husqvarna. I programmed 10 production ready robots for lawn
+              mower assembly.
+              It included 5 press tending robots, 3 Deburring robots with air compensation, 1 3D vision inspection for
+              QC, and 1
+              palletizing robot. The video was taken at MOD build, before shipping the line to the customer.
+            </p>
+          </div>
+          <div class="project-img">
+            <!-- uploaded video to Vimeo, then used embedded code -->
+            <iframe
+              src="https://player.vimeo.com/video/658453704?h=729ee9c790&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              width="400" height="222" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              title="Husqvarna.mp4"></iframe>
+          </div>
+        </div>
+        <div class="system-item">
+          <div class="system-info">
+            <h1>3D Vision Bin Picking</h1>
+            <p>This robot is using a 3D vision system running on ROS. The vision algorithim was setup by another team,
+              but I was responsible
+              for the installation, calibration, and safety logic. The 3D camera scans the chute, then sends over the
+              target information
+              with 6 DOF over to the robot. The robot gets the package from the chute, places it on the conveyor, and
+              the package
+              gets scanned and sent out for processing.
+            </p>
+          </div>
+          <div class="project-img">
+            <!-- uploaded video to Vimeo, then used embedded code -->
+            <iframe
+              src="https://player.vimeo.com/video/658454942?h=6983a2dcfc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              title="PickandPlace.mp4"></iframe>
+          </div>
+        </div>
+        <div class="system-item">
+          <div class="system-info">
+            <h1>YuMi Cobot with AGV</h1>
+            <p>This was another great project where my team created something ahead of its time. I programmed a Cobot on
+              an AGV
+              to go to pick and place parts from different locations determined by the queuing system. My colleague was
+              responsible for mapping the
+              environment and queuing system using python. I setup the vision inspection and coordinated motion control.
+              The robot traveled to
+              its location using Lidar to avoid collisions, then took a picture of a QR code, which it used to setup the
+              work object frame used for the vision system.
+              The Naruto run is a good laugh, but really helps to avoid collisions with other Cobots. The rest of the
+              video is cut out for NDA reasons.
+            </p>
+          </div>
+          <div class="project-img">
+            <!-- uploaded video to Vimeo, then used embedded code -->
+            <iframe
+              src="https://player.vimeo.com/video/658457510?h=88f3bae17e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              title="YuMi_AGV.mp4"></iframe>
+          </div>
+        </div>
+        <div class="system-item">
+          <div class="system-info">
+            <h1>YuMi Espresso</h1>
+            <p>This project I completed showcases the YuMi's precise motion and cobot capabilities. The user grabs a
+              coffee cup and places it on the stand.
+              Underneath the cup, there are differnt stickers that correlate with the different espresso types. The YuMi
+              picks up the cup and takes a picture of the sticker
+              and uses the pattern algorithim to select the espresso type (decaf, bold, caramel). Then YuMi gets the
+              espresso pod, based of the pattern recognized and then
+              starts the automatic brewing process.
+            </p>
+          </div>
+          <div class="project-img">
+            <!-- uploaded video to YouTube, then used embedded code -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CUb6WlVSWz0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- About that includes my skills and image -->
+  <section id="about">
+    <div class="about container">
+      <div class="about-img">
+        <img src="./files/images/Dave.jpg" alt="img">
+      </div>
+      <div class="about-wrapper">
+        <!-- span used to change color from CSS -->
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Senior Engineer</h2>
+        <p>I am a high-powered, innovative and versatile professional, offering immeasurable success in managing
+          projects, mentoring/training engineers, ABB robotics expert, technical documentation, PM/tools program,
+          customer service & support, safety, & collaborating with different teams to ensure mission success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer area that includes-->
+  <section id="footer">
+    <div class="footer container">
+      <div class="setup">
+        <!-- span used to change color from CSS -->
+        <h1><span>D</span>ave <span>G</span>arcia</h1>
+      </div>
+      <h2>Industrial Robotics Expert</h2>
+      <div class="contact-icons">
+        <!-- icons from w3schools -->
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/dave-g-" class="fa fa-linkedin-square"
+            style="font-size:48px;color:red"></a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/dave-roboticsguy" class="fa fa-github" style="font-size:48px;color:red"></a>
+        </div>
+      </div>
+      <p></p>
+    </div>
+  </section>
+
+</body>
+
+</html>
