@@ -274,7 +274,7 @@ without it needing to be in the HTML */
 	animation-delay: 1s;
 }
 
-/* sets the animation by numbered row in html (1-4 h1 Lines)*/
+/* sets the animation by numbered row in html (1-5 h1 Lines)*/
 /* also increment the time */
 #me h1:nth-child(1) {
 	animation: text_reveal_name 0.5s ease forwards;
@@ -292,6 +292,10 @@ without it needing to be in the HTML */
 
 #me h1:nth-child(4) {
 	animation-delay: 4s;
+}
+
+#me h1:nth-child(5) {
+	animation-delay: 5s;
 }
 
 #me h1 span {
@@ -319,6 +323,10 @@ without it needing to be in the HTML */
 
 #me h1:nth-child(4) span {
 	animation-delay: 3.5s;
+}
+
+#me h1:nth-child(5) span {
+	animation-delay: 4.5s;
 }
 
 /* systems*/
