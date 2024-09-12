@@ -295,6 +295,7 @@ without it needing to be in the HTML */
 }
 
 #me h1:nth-child(5) {
+	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 5s;
 }
 
